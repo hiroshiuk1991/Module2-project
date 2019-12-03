@@ -35,7 +35,7 @@ puts 'All seeded'
     ingred = Ingredient.all.sample
 
 
-    RecipeIngredient.create(
+    List.create(
     ingredient: ingred, 
     recipe: recep,
 )
