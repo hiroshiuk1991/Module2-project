@@ -1,4 +1,4 @@
-<h1>Tell us about your recipe...</h1>
+<h1>Lets Create a Recipe!</h1>
 
 <%= form_for @recipe do |r| %>
 
@@ -6,7 +6,7 @@
   <%= r.text_field :dish_name %>
 <br>
 
-<%= collection_select(:post, :author_id, Author.all, :id, :name_with_initial, :prompt => "Select an ingredient?") %> 
+<%= collection_select(:ingredient, :ingredient_id, Ingredient.all, :id, :prompt => "Select an ingredient?") %> 
 
 <br>
 
